@@ -356,7 +356,7 @@ header{
     align-items: center;
     justify-content: center;
     height: 300px;
-    width: 100px;
+    width: auto;
     margin-top: 40px;
     border-radius: 30px;
     font-size: 0.8em;
