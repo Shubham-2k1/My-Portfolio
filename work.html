@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+</head>
+<body>
+  <header id="header">
+    <div class="navbar">
+        <div class="name">Shubham Bhardwaj</div>
+        <ul class="links">
+            <li><a href="index.html">Return to Home</a></li>
+        </ul>
+       
+        <div class="toggle_btn"><i class="fa fa-solid fa-bars"></i></div>
+    </div>
+
+    <div class="dropdown_menu">
+        <li><a href="index.html">Return to Home</a></li>
+       
+    </div>
+</header>
+
+
+   <!-- Project -->
+   <div class="box">
+    <div class="who" id="shubham">
+      <center><h1 class="heads">Projects</h1></center><br>
+      <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GAglg0RqRQ4?si=hWEF_PT9mqTBvVgF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      
+    </div>
+  </div>
+   <!-- Video Editing Work -->
+   <div class="box">
+    <div class="who">
+      <center><h1 class="heads">Video Editing</h1></center><br>
+      <div class="videos">
+        <iframe width="400" height="215" src="https://www.youtube.com/embed/ATcR9tSfooA?si=GLYRJkqmfQCJOQBv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <iframe width="400" height="215" src="https://www.youtube.com/embed/vRBGuMtldUc?si=w-FrlI24oIQA4Vyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe width="400" height="215" src="https://www.youtube.com/embed/1YWot0EeaYQ?si=lqn6bBaaPAybmkX-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+    </div>
+    </div>
+  </div>
+
+  <!-- Graphics Work -->
+  <div class="box">
+    <div class="who" id="shubham">
+      <center><h1 class="heads">Graphics Desinging</h1></center><br>
+      <div class="graphics">
+        <img src="gfx1.png" height="300" width="300">
+        <img src="gfx3.jpg" height="300" width="300">
+        <img src="gfx2.png" height="300" width="300">
+    </div>
+      
+    </div>
+  </div>
+
+  <!-- Photography -->
+  <div class="box">
+    <div class="who" id="shubham">
+      <center><h1 class="heads">Photography</h1></center><br>
+      <div class="shots">
+        <img src="shot1.jpg" height="400" width="300">
+        <img src="shot3.jpg" height="400" width="300">
+        <img src="shot2.jpg" height="400" width="300">
+    </div>
+    </div>
+  </div>
+<br>
+<br>
+  <hr><br>
+
+    <!-- Footer -->
+   <center><p class="footer">Copyright © Shubham Bhardwaj. <br>All Rights Reserved<br>
+    Designed by Shubham Bhardwaj .</p></center>
+    <br>
+    <script >
+      
+      const toggleBtn = document.querySelector('.toggle_btn')
+
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+    }
+    
+  </script>
+</body>
+</html>
